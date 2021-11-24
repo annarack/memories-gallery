@@ -1,6 +1,6 @@
-import styles from "./QuoteItem.module.css";
+import styles from "./PaperNote.module.css";
 
-export default function QuoteItem({ data }) {
+export default function PaperNote({ data }) {
   return (
     <div className={styles.container}>
       <img className={styles.pin} src={"./assets/pin.png"} alt="" />

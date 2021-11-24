@@ -1,7 +1,7 @@
 import styles from "./App.module.css";
 import data from "../../data.js";
 import Polaroid from "../Polaroid/Polaroid.js";
-import QuoteItem from "../QuoteItem/QuoteItem.js";
+import PaperNote from "../PaperNote/PaperNote.js";
 
 function App() {
   return (
@@ -10,7 +10,7 @@ function App() {
         item.type === "polaroid" ? (
           <Polaroid data={item} />
         ) : (
-          <QuoteItem data={item} />
+          <PaperNote data={item} />
         )
       )}
     </div>
