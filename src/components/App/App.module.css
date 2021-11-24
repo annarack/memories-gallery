@@ -1,7 +1,7 @@
 .container {
   display: grid;
   justify-items: center;
-  gap: 10vw;
+  gap: 5vw;
   padding: 100px 10%;
 }
 
