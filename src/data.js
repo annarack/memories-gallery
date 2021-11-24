@@ -6,6 +6,7 @@ const data = [
     type: "polaroid",
     subtype: "dark",
   },
+  { note: "This is a textnote on a piece of paper", type: "note" },
   {
     img: "photo-1.jpeg",
     title: "My memory 2",
@@ -18,7 +19,7 @@ const data = [
     title: "My memory 3",
     info: "This is a memory",
     type: "polaroid",
-    subtype: "dark",
+    subtype: "light",
   },
   {
     img: "photo-3.jpeg",
@@ -27,7 +28,6 @@ const data = [
     type: "polaroid",
     subtype: "dark",
   },
-  { note: "This is a textnote on a piece of paper", type: "note" },
 ];
 
 export default data;
