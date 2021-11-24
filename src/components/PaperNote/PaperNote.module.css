@@ -11,11 +11,12 @@
 }
 
 .textBox {
+  font-size: 12px;
   position: absolute;
   width: 70%;
-  top: 50%;
+  top: 20%;
   left: 50%;
-  transform: translate(-50%, -50%);
+  transform: translateX(-50%);
 }
 
 .pin {
