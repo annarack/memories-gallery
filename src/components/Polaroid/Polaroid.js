@@ -1,14 +1,15 @@
 import styles from "./Polaroid.module.css";
 
+const getRandomArbitrary = (min, max) => {
+  return Math.random() * (max - min) + min;
+};
+
 export default function Polaroid({ data }) {
   const showPolaroidInfo = () => {
     alert(data.info);
   };
 
-  function getRandomArbitrary(min, max) {
-    return Math.random() * (max - min) + min;
-  }
-  const pinRotation = `rotateZ(${getRandomArbitrary(-15, 15)}deg)`;
+  const pinRotation = `rotateZ(${getRandomArbitrary(-20, 20)}deg)`;
 
   return (
     <div onClick={showPolaroidInfo} className={styles.container}>
