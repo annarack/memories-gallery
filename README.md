@@ -1,4 +1,8 @@
-# Getting Started with Create React App
+# Memories Gallery
+
+After cloning, initialize node_modules by running:
+
+### `npm i`
 
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
