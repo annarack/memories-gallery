@@ -1,8 +1,8 @@
 const data = [
   {
     img: "IMG_2707.jpeg",
-    title: "My memory 1",
-    info: "This is a memory",
+    title: "Thanksgiving 2018",
+    info: "Thanksgiving 2018 in the US. We had a great time!",
     type: "polaroid",
     subtype: "dark",
     id: "memory1",
@@ -14,27 +14,32 @@ const data = [
   },
   {
     img: "photo-1.jpeg",
-    title: "My memory 2",
-    info: "This is another memory",
+    title: "Happy new year",
+    info: "New years eve 2020/2021",
     type: "polaroid",
     subtype: "light",
     id: "memory2",
   },
   {
     img: "photo-2.jpeg",
-    title: "My memory 3",
-    info: "This is a memory",
+    title: "Dance!",
+    info: "Such a cool concert. Looking forward to see them again! ",
     type: "polaroid",
     subtype: "light",
     id: "memory3",
   },
   {
     img: "photo-3.jpeg",
-    title: "My memory 4",
-    info: "This is a memory",
+    title: "Pancakes forever!",
+    info: "Those were the best pancakes ever!",
     type: "polaroid",
     subtype: "dark",
     id: "memory4",
+  },
+  {
+    note: "This is another important textnote",
+    type: "note",
+    id: "note2",
   },
 ];
 
