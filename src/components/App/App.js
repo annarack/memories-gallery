@@ -5,7 +5,8 @@ import PaperNote from "../PaperNote/PaperNote.js";
 
 function App() {
   return (
-    <div className={styles.bgContainer}>
+    <>
+      <div className={styles.bgContainer} />
       <div className={styles.container}>
         {data.map((item) =>
           item.type === "polaroid" ? (
@@ -15,7 +16,7 @@ function App() {
           )
         )}
       </div>
-    </div>
+    </>
   );
 }
 
