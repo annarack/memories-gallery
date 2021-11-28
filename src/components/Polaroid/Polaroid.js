@@ -10,9 +10,14 @@ export default function Polaroid({ data }) {
   };
 
   const pinRotation = `rotateZ(${getRandomArbitrary(-20, 20)}deg)`;
+  const polaroidRotation = `rotateZ(${getRandomArbitrary(-10, 10)}deg)`;
 
   return (
-    <div onClick={showPolaroidInfo} className={styles.container}>
+    <div
+      onClick={showPolaroidInfo}
+      className={styles.container}
+      style={{ transform: polaroidRotation }}
+    >
       <img className={styles.photo} src={`./assets/${data.img}`} alt="" />
       <img
         className={styles.polaroidFrame}
