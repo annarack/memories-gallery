@@ -8,9 +8,9 @@ function App() {
     <div className={styles.container}>
       {data.map((item) =>
         item.type === "polaroid" ? (
-          <Polaroid data={item} />
+          <Polaroid data={item} key={item.id} />
         ) : (
-          <PaperNote data={item} />
+          <PaperNote data={item} key={item.id} />
         )
       )}
     </div>
