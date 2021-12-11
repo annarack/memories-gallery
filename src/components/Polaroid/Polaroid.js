@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "./Polaroid.module.css";
 import InfoPopup from "../InfoPopup/InfoPopup.js";
 

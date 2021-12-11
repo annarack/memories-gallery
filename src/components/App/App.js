@@ -1,21 +1,23 @@
-import styles from "./App.module.css";
+import MainMenu from "../MainMenu/MainMenu";
+import Pinboard from "../Pinboard/Pinboard";
+import Slideshow from "../Slideshow/Slideshow";
 import data from "../../data.js";
-import Polaroid from "../Polaroid/Polaroid.js";
-import PaperNote from "../PaperNote/PaperNote.js";
+import { useState } from "react/cjs/react.development";
 
 function App() {
+  const [currentPage, setCurrentPage] = useState("pinboard");
+
+  const filteredData = data.filter((item) => item.type === "polaroid");
+  console.log(filteredData);
+
   return (
     <>
-      <div className={styles.bgContainer} />
-      <div className={styles.container}>
-        {data.map((item) =>
-          item.type === "polaroid" ? (
-            <Polaroid data={item} key={item.id} />
-          ) : (
-            <PaperNote data={item} key={item.id} />
-          )
-        )}
-      </div>
+      {currentPage === "pinboard" ? (
+        <Pinboard data={data} />
+      ) : (
+        <Slideshow imageData={filteredData} />
+      )}
+      <MainMenu pageHandler={setCurrentPage} currentPage={currentPage} />
     </>
   );
 }
