@@ -1,4 +1,4 @@
-import { useState, useEffect } from "react";
+import { useState } from "react";
 import styles from "./Polaroid.module.css";
 import InfoPopup from "../InfoPopup/InfoPopup.js";
 
@@ -39,7 +39,7 @@ export default function Polaroid({ data }) {
         className={styles.container}
         style={{ transform: polaroidRotation }}
       >
-        <img className={styles.photo} src={`./assets/${data.img}`} />
+        <img className={styles.photo} src={`./assets/${data.img}`} alt="" />
         <img
           className={styles.polaroidFrame}
           src={
