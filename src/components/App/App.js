@@ -2,7 +2,7 @@ import MainMenu from "../MainMenu/MainMenu";
 import Pinboard from "../Pinboard/Pinboard";
 import Slideshow from "../Slideshow/Slideshow";
 import data from "../../data.js";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 function App() {
   const [currentPage, setCurrentPage] = useState("pinboard");
