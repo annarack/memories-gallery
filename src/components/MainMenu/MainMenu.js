@@ -1,6 +1,6 @@
 import styles from "./MainMenu.module.css";
 import Button from "../Button/Button.js";
-import { useState } from "react/cjs/react.development";
+import { useState } from "react";
 
 // https://hamburger-react.netlify.app/
 import { Squash as Hamburger } from "hamburger-react";
