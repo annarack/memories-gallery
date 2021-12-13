@@ -14,7 +14,7 @@ export default function Slideshow({ imageData }) {
       setCurrentItemID((currentItemID + 1) % imageData.length);
     }, crossFadeTimer / 2);
 
-    return () => clearInterval(timeout);
+    return () => clearTimeout(timeout);
   }, [currentItemID, imageData.length]);
 
   // fade style is defined in index.css to have it globally accessible
